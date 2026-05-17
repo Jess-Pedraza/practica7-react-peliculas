@@ -55,9 +55,11 @@ Se utilizo TMDB API (The Movie Database) para tener informacion de peliculas
 
 La aplicación muestra películas populares obtenidas desde la API TMDB. Cada película incluye imagen, título y calificación. Al seleccionar una película se muestra información detallada como descripción, géneros, fecha de estreno y puntuación.
 
-## Link del respositorio
+## Link del repositorio
+https://github.com/Jess-Pedraza/practica7-react-peliculas.git
 
 ## Link del despliegue en Netlify
+https://practica7-jessica-peliculas.netlify.app
 
 ## Conclusión
 
