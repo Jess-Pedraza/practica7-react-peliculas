@@ -1,0 +1,168 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #0b1120, #111827);
+  color: white;
+}
+
+/* HEADER */
+
+header{
+  text-align: center;
+  padding: 25px;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
+}
+
+header h1{
+  margin: 0;
+  font-size: 38px;
+}
+
+header p{
+  margin-top: 10px;
+  color: #cbd5e1;
+}
+
+/* GRID */
+
+.movies-grid{
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 25px;
+
+  max-width: 1400px;
+
+  margin: auto;
+
+  padding: 40px;
+}
+
+/* CARD */
+
+.movie-card{
+  background-color: #1e293b;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  transition: 0.3s;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.movie-card:hover{
+  transform: translateY(-8px);
+}
+
+.movie-card a{
+  text-decoration: none;
+  color: white;
+}
+
+/* IMAGE */
+
+.movie-image{
+  width: 100%;
+
+  height: 340px;
+
+  object-fit: cover;
+}
+
+/* TITLE */
+
+.movie-card h3{
+  text-align: center;
+
+  padding: 15px;
+
+  font-size: 18px;
+
+  min-height: 50px;
+}
+
+/* DETAILS */
+
+.details-container{
+  display: flex;
+
+  gap: 40px;
+
+  max-width: 1100px;
+
+  margin: 40px auto;
+
+  background-color: #1e293b;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.details-container img{
+  width: 320px;
+
+  border-radius: 15px;
+}
+
+.details-container div{
+  flex: 1;
+}
+
+.details-container h1{
+  margin-top: 0;
+
+  font-size: 40px;
+}
+
+.details-container p{
+  line-height: 1.8;
+
+  font-size: 18px;
+}
+
+/* FOOTER */
+
+footer{
+  text-align: center;
+
+  padding: 30px;
+
+  margin-top: 40px;
+
+  background-color: rgba(0,0,0,0.3);
+
+  color: #e2e8f0;
+}
+
+footer p{
+  margin: 8px 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px){
+
+  .details-container{
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .details-container img{
+    width: 250px;
+  }
+
+  .movies-grid{
+    padding: 20px;
+  }
+}
